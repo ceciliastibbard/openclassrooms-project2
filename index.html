@@ -1,63 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>ohmyfood</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ohmyfood</title>
-</head>
+  <body>
+    <header class="header">
+      <div class="header__logo">ohmyfood</div>
+      <div class="header__location">  
+        Paris, Belleville
+      </div>
+      <h1 class="header__book">Book the menu you like</h1>
+      <h2 class="header__discover">Discover top-of-the-art restaurants we picked for you</h2>
+      <button class="header__explore">Explore our restaurants</button>
+    </header>
 
-<body>
+    <h2 class="heading">How it works</h2>
 
-  <header>
-    <div>ohmyfood</div>
-    <div>Paris, Belleville</div>
-    <h1>Book the menu you like</h1>
-    <h2>Discover top-of-the-art restaurants we picked for you</h2>
-    <button>Explore our restaurants</button>
-  </header>
-
-
-  <h2>How it works</h2>
-
-  <nav>
-    <ul>
-      <li>Choose a restaurant</li>
-      <li>Create your menu</li>
-      <li>Go enjoy it at the restaurant</li>
-    </ul>
-  </nav>
-
-  <main>
-
-    <h2>Restaurants</h2>
-
-    <article>
-      <figure>
-        <img src="images/full-pallette.jpg" alt="The Full Palette">
-        <figcaption>
-          <h3>The Full Palette</h3>
-          <p>New York</p>
-        </figcaption>
-
-      </figure>
-    </article>
-
-  </main>
-
-  <footer>
-    <div>ohmyfood</div>
-    <nav>
+    <nav class="topnav">
       <ul>
-        <li>Suggest a restaurant</li>
-        <li>Become a partner</li>
-        <li>Legal</li>
-        <li>Contact</li>
+        <li class="topnav__li">
+          <span class="topnav__number">1</span>Choose a restaurant
+        </li>
+        <li class="topnav__li">
+          <span class="topnav__number">2</span>Create your menu
+        </li>
+        <li class="topnav__li topnav__li--active">
+          <span class="topnav__number">3</span>Go enjoy it at the restaurant
+        </li>
       </ul>
     </nav>
-  </footer>
 
-</body>
+    <main class="restaurants">
+      <h2 class="heading restaurants__heading">Restaurants</h2>
+      <article class="restaurant">
+        <figure class="restaurant__image">
+          <img src="images/full-pallette.jpg" alt="The Full Palette" />
+          <figcaption>
+            <h3 class="restaurant__name">The Full Palette</h3>
+            <p class="restaurant__city">New York</p>
+            <div class="restaurant__favourite"></div>
+          </figcaption>
+        </figure>
+      </article>
 
+    <footer class="footer">
+      <div class="footer__logo">ohmyfood</div>
+      <nav class="bottom-nav">
+        <ul>
+          <li class="bottom-nav__li"><span class="fas fa-solid fa-utensils"></span>Suggest a restaurant</li>
+          <li class="bottom-nav__li"><span class="fas fa-solid fa-handshake-angle"></span>Become a partner</li>
+          <li class="bottom-nav__li">Legal</li>
+          <li class="bottom-nav__li">Contact</li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
 </html>
