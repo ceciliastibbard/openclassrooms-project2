@@ -1,0 +1,115 @@
+.header {
+  text-align: center;
+
+  &__logo {
+    display: block;
+    padding: 20px 0;
+  }
+  &__location {
+    height: 90px;
+    padding: 30px 0;
+    box-shadow: 0px -5px 3px #ccc;
+  }
+  &__icon {
+    padding: 0 10px;
+  }
+  &__book {
+    padding-top: 50px;
+  }
+  &__discover {
+    padding: 30px 70px;
+    margin: 20px 70px;
+  }
+  &__explore {
+    height: 80px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px #ccc;
+    padding: 20px 40px 30px 40px;
+    margin-bottom: 100px;
+  }
+}
+.heading {
+  text-align: left;
+  margin: 50px 25px;
+}
+.topnav {
+  ul {
+    max-width: 90%;
+    margin-left: 70px;
+    margin-bottom: 100px;
+  }
+  &__li {
+    height: 120px;
+    padding: 40px 0 40px 20px;
+    margin-bottom: 40px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 5px #ccc;
+  }
+  &__number {
+    display: inline-block;
+    text-align: center;
+    border-radius: 50px;
+    padding: 5px 15px;
+    margin-left: -40px;
+  }
+  .fas {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+.restaurants {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+.restaurant {
+  width: 90%;
+  margin: 50px auto 0 auto;
+  padding-bottom: 20px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px #ccc;
+
+  &__figure {
+    position: relative;
+    img {
+      width: 100%;
+      max-height: 390px;
+      object-fit: cover;
+      background-position: center;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      margin-bottom: 20px;
+    }
+    .restaurant__figcaption {
+      display: flex;
+      justify-content: space-between;
+      margin: auto 30px;
+      &__details {
+        padding-left: 30px;
+      }
+      &__favourite {
+        align-items: center;
+      }
+    }
+  }
+}
+
+.new {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  padding: 10px 50px;
+}
+
+.footer {
+  padding-left: 20px;
+  line-height: 40px;
+  &__logo {
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+  .fas {
+    display: inline-block;
+    width: 30px;
+  }
+}

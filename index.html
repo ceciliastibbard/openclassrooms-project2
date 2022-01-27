@@ -13,7 +13,7 @@
     <header class="header">
       <div class="header__logo">ohmyfood</div>
       <div class="header__location">
-        <span class="fas fa-map-marker-alt" style="align-self: center"></span>
+        <span class="header__icon fas fa-map-marker-alt" style="align-self: center"></span>
         Paris, Belleville
       </div>
       <h1 class="header__book">Book the menu you like</h1>
@@ -27,15 +27,15 @@
       <ul>
         <li class="topnav__li">
           <span class="topnav__number">1</span>
-          <span class="fas fa-mobile-alt"></span>Choose a restaurant
+          <span class="fas fa-mobile-alt fas--inactive"></span><a ref="#choose">Choose a restaurant</a>
         </li>
         <li class="topnav__li">
           <span class="topnav__number">2</span>
-          <span class="fas fa-list-ul"></span>Create your menu
+          <span class="fas fa-list-ul fas--inactive"></span><a ref="#create">Create your menu</a>
         </li>
         <li class="topnav__li topnav__li--active">
           <span class="topnav__number">3</span>
-          <span class="fas fa-store"></span>Go enjoy it at the restaurant
+          <span class="fas fa-store fas--active"></span><a ref="#go">Go enjoy it at the restaurant</a>
         </li>
       </ul>
     </nav>
@@ -44,45 +44,63 @@
       <h2 class="heading restaurants__heading">Restaurants</h2>
 
       <article class="restaurant">
-        <figure class="restaurant__image">
+        <figure class="restaurant__figure">
           <img src="images/full-pallette.jpg" alt="The Full Palette" />
-          <figcaption>
-            <h3 class="restaurant__name">The Full Palette</h3>
-            <p class="restaurant__city">New York</p>
-            <div class="restaurant__favourite"></div>
+          <div class="new">New</div>
+          <figcaption class="restaurant__figcaption">
+            <div class="restaurant__details">
+              <h3 class="restaurant__name">The Full Palette</h3>
+              <p class="restaurant__city">New York</p>
+            </div>
+            <div class="restaurant__favourite">
+              <span class="far fa-heart"></span>
+            </div>
           </figcaption>
         </figure>
       </article>
 
       <article class="restaurant">
-        <figure class="restaurant__image">
+        <figure class="restaurant__figure">
           <img src="images/enchanted-plate.jpg" alt="The Enchanted Plate" />
-          <figcaption>
-            <h3 class="restaurant__name">The Enchanted Plate</h3>
-            <p class="restaurant__city">New York</p>
-            <div class="restaurant__favourite"></div>
+          <div class="new">New</div>
+          <figcaption class="restaurant__figcaption">
+            <div class="restaurant__details">
+              <h3 class="restaurant__name">The Enchanted Plate</h3>
+              <p class="restaurant__city">New York</p>
+            </div>
+            <div class="restaurant__favourite">
+              <span class="far fa-heart"></span>
+            </div>
           </figcaption>
         </figure>
       </article>
 
       <article class="restaurant">
-        <figure class="restaurant__image">
+        <figure class="restaurant__figure">
           <img src="images/bastille.jpg" alt="Bastille" />
-          <figcaption>
-            <h3 class="restaurant__name">Bastille</h3>
-            <p class="restaurant__city">New York</p>
-            <div class="restaurant__favourite"></div>
+          <figcaption class="restaurant__figcaption">
+            <div class="restaurant__details">
+              <h3 class="restaurant__name">Bastille</h3>
+              <p class="restaurant__city">New York</p>
+            </div>
+            <div class="restaurant__favourite">
+              <span class="far fa-heart"></span>
+            </div>
           </figcaption>
         </figure>
       </article>
 
       <article class="restaurant">
-        <figure class="restaurant__image">
+        <figure class="restaurant__figure">
           <img src="images/le-gourmand.jpg" alt="Le Gourmand" />
-          <figcaption>
-            <h3 class="restaurant__name">Le Gourmand</h3>
-            <p class="restaurant__city">New York</p>
-            <div class="restaurant__favourite"></div>
+          <figcaption class="restaurant__figcaption">
+            <div class="restaurant__details">
+              <h3 class="restaurant__name">Le Gourmand</h3>
+              <p class="restaurant__city">New York</p>
+            </div>
+            <div class="restaurant__favourite">
+              <span class="far fa-heart"></span>
+            </div>
           </figcaption>
         </figure>
       </article>

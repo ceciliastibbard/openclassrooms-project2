@@ -1,0 +1,51 @@
+$primaryColor: #9356dc;
+$newColor: #99e2d0;
+$newTextColor: #139273;
+
+.header {
+  background-color: #f6f6f6;
+  &__logo {
+    background-color: #ffffff;
+  }
+  &__location {
+    background-color: #eaeaea;
+    box-shadow: #d5d5d5;
+  }
+  &__explore {
+    background: rgb(227, 112, 218);
+    background: linear-gradient(90deg, rgba(227, 112, 218, 1) 0%, rgba(215, 108, 218, 1) 35%, rgba(162, 91, 219, 1) 100%);
+    color: white;
+  }
+}
+
+.fas--active {
+  color: #9356dc;
+}
+.fas--inactive {
+  color: #7e7e7e;
+}
+
+.topnav {
+  &__number {
+    background-color: $primaryColor;
+    color: white;
+  }
+  &__li {
+    background-color: #f6f6f6;
+    &--active {
+      background-color: #f5edff;
+    }
+  }
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+}
+.new {
+  background-color: #99e2d0;
+  color: #139273;
+}
+.footer {
+  background-color: #353535;
+  color: white;
+}
