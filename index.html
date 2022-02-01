@@ -1,121 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/78abcbd30b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css" />
-    <title>ohmyfood</title>
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="header__logo">ohmyfood</div>
-      <div class="header__location">
-        <span class="header__icon fas fa-map-marker-alt" style="align-self: center"></span>
-        Paris, Belleville
-      </div>
-      <h1 class="header__book">Book the menu you like</h1>
-      <h2 class="header__discover">Discover top-of-the-art restaurants we picked for you</h2>
-      <button class="header__explore">Explore our restaurants</button>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/78abcbd30b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <title>ohmyfood</title>
+</head>
 
-    <h2 class="heading">How it works</h2>
+<body>
+  <header class="header">
+    <div class="header__logo">ohmyfood</div>
+    <div class="header__location">
+      <span class="header__icon fas fa-map-marker-alt" style="align-self: center"></span>
+      Paris, Belleville
+    </div>
+    <h1 class="header__book">Book the menu you like</h1>
+    <h2 class="header__discover">Discover top-of-the-art restaurants we picked for you</h2>
+    <button class="header__explore">Explore our restaurants</button>
+  </header>
 
-    <nav class="topnav">
+  <h2 class="heading">How it works</h2>
+
+  <nav class="topnav">
+    <ul>
+      <li class="topnav__li">
+        <span class="topnav__number">1</span>
+        <span class="fas fa-mobile-alt fas--inactive"></span><a ref="#choose">Choose a restaurant</a>
+      </li>
+      <li class="topnav__li">
+        <span class="topnav__number">2</span>
+        <span class="fas fa-list-ul fas--inactive"></span><a ref="#create">Create your menu</a>
+      </li>
+      <li class="topnav__li topnav__li--active">
+        <span class="topnav__number">3</span>
+        <span class="fas fa-store fas--active"></span><a ref="#go">Go enjoy it at the restaurant</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="restaurants">
+    <h2 class="heading restaurants__heading">Restaurants</h2>
+
+    <article class="restaurant">
+      <figure class="restaurant__figure">
+        <img src="images/full-pallette.jpg" alt="The Full Palette" />
+        <div class="new">New</div>
+        <figcaption class="restaurant__figcaption">
+          <div class="restaurant__details">
+            <h3 class="restaurant__name">The Full Palette</h3>
+            <p class="restaurant__city">New York</p>
+          </div>
+          <div class="restaurant__favourite">
+            <span class="love fas fa-heart" aria-hidden="true"></span>
+          </div>
+        </figcaption>
+      </figure>
+    </article>
+
+    <article class="restaurant">
+      <figure class="restaurant__figure">
+        <img src="images/enchanted-plate.jpg" alt="The Enchanted Plate" />
+        <div class="new">New</div>
+        <figcaption class="restaurant__figcaption">
+          <div class="restaurant__details">
+            <h3 class="restaurant__name">The Enchanted Plate</h3>
+            <p class="restaurant__city">New York</p>
+          </div>
+          <div class="restaurant__favourite">
+            <span class="love fas fa-heart" aria-hidden="true"></span>
+          </div>
+        </figcaption>
+      </figure>
+    </article>
+
+
+    <article class="restaurant">
+      <figure class="restaurant__figure">
+        <a href="bastille.html"><img src="images/bastille.jpg" alt="Bastille" /></a>
+        <figcaption class="restaurant__figcaption">
+          <div class="restaurant__details">
+            <h3 class="restaurant__name">Bastille</h3>
+            <p class="restaurant__city">New York</p>
+          </div>
+          <div class="restaurant__favourite">
+            <span class="love fas fa-heart" aria-hidden="true"></span>
+          </div>
+        </figcaption>
+      </figure>
+    </article>
+
+
+    <article class="restaurant">
+      <figure class="restaurant__figure">
+        <img src="images/le-gourmand.jpg" alt="Le Gourmand" />
+        <figcaption class="restaurant__figcaption">
+          <div class="restaurant__details">
+            <h3 class="restaurant__name">Le Gourmand</h3>
+            <p class="restaurant__city">New York</p>
+          </div>
+          <div class="restaurant__favourite">
+            <span class="love fas fa-heart" aria-hidden="true"></span>
+          </div>
+        </figcaption>
+      </figure>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__logo">ohmyfood</div>
+    <nav class="bottom-nav">
       <ul>
-        <li class="topnav__li">
-          <span class="topnav__number">1</span>
-          <span class="fas fa-mobile-alt fas--inactive"></span><a ref="#choose">Choose a restaurant</a>
-        </li>
-        <li class="topnav__li">
-          <span class="topnav__number">2</span>
-          <span class="fas fa-list-ul fas--inactive"></span><a ref="#create">Create your menu</a>
-        </li>
-        <li class="topnav__li topnav__li--active">
-          <span class="topnav__number">3</span>
-          <span class="fas fa-store fas--active"></span><a ref="#go">Go enjoy it at the restaurant</a>
-        </li>
+        <li class="bottom-nav__li"><span class="fas fa-solid fa-utensils"></span>Suggest a restaurant</li>
+        <li class="bottom-nav__li"><span class="fas fa-hands-helping"></span>Become a partner</li>
+        <li class="bottom-nav__li">Legal</li>
+        <li class="bottom-nav__li">Contact</li>
       </ul>
     </nav>
+  </footer>
+</body>
 
-    <main class="restaurants">
-      <h2 class="heading restaurants__heading">Restaurants</h2>
-
-      <article class="restaurant">
-        <figure class="restaurant__figure">
-          <img src="images/full-pallette.jpg" alt="The Full Palette" />
-          <div class="new">New</div>
-          <figcaption class="restaurant__figcaption">
-            <div class="restaurant__details">
-              <h3 class="restaurant__name">The Full Palette</h3>
-              <p class="restaurant__city">New York</p>
-            </div>
-            <div class="restaurant__favourite">
-              <span class="far fa-heart"></span>
-            </div>
-          </figcaption>
-        </figure>
-      </article>
-
-      <article class="restaurant">
-        <figure class="restaurant__figure">
-          <img src="images/enchanted-plate.jpg" alt="The Enchanted Plate" />
-          <div class="new">New</div>
-          <figcaption class="restaurant__figcaption">
-            <div class="restaurant__details">
-              <h3 class="restaurant__name">The Enchanted Plate</h3>
-              <p class="restaurant__city">New York</p>
-            </div>
-            <div class="restaurant__favourite">
-              <span class="far fa-heart"></span>
-            </div>
-          </figcaption>
-        </figure>
-      </article>
-
-      <article class="restaurant">
-        <figure class="restaurant__figure">
-          <img src="images/bastille.jpg" alt="Bastille" />
-          <figcaption class="restaurant__figcaption">
-            <div class="restaurant__details">
-              <h3 class="restaurant__name">Bastille</h3>
-              <p class="restaurant__city">New York</p>
-            </div>
-            <div class="restaurant__favourite">
-              <span class="far fa-heart"></span>
-            </div>
-          </figcaption>
-        </figure>
-      </article>
-
-      <article class="restaurant">
-        <figure class="restaurant__figure">
-          <img src="images/le-gourmand.jpg" alt="Le Gourmand" />
-          <figcaption class="restaurant__figcaption">
-            <div class="restaurant__details">
-              <h3 class="restaurant__name">Le Gourmand</h3>
-              <p class="restaurant__city">New York</p>
-            </div>
-            <div class="restaurant__favourite">
-              <span class="far fa-heart"></span>
-            </div>
-          </figcaption>
-        </figure>
-      </article>
-    </main>
-
-    <footer class="footer">
-      <div class="footer__logo">ohmyfood</div>
-      <nav class="bottom-nav">
-        <ul>
-          <li class="bottom-nav__li"><span class="fas fa-solid fa-utensils"></span>Suggest a restaurant</li>
-          <li class="bottom-nav__li"><span class="fas fa-hands-helping"></span>Become a partner</li>
-          <li class="bottom-nav__li">Legal</li>
-          <li class="bottom-nav__li">Contact</li>
-        </ul>
-      </nav>
-    </footer>
-  </body>
 </html>

@@ -1,3 +1,6 @@
+
+// HOMEPAGE CSS *******************************************************************************************
+
 .header {
   text-align: center;
 
@@ -5,39 +8,47 @@
     display: block;
     padding: 20px 0;
   }
+
   &__location {
-    height: 90px;
-    padding: 30px 0;
+    height: 70px;
+    padding: 20px 0;
     box-shadow: 0px -5px 3px #ccc;
   }
+
   &__icon {
-    padding: 0 10px;
+    padding-right: 40px;
   }
+
   &__book {
     padding-top: 50px;
   }
+
   &__discover {
-    padding: 30px 70px;
-    margin: 20px 70px;
+    padding: 20px 70px;
+    margin: 10px 70px;
   }
+
   &__explore {
     height: 80px;
     border-radius: 50px;
     box-shadow: 5px 5px 5px #ccc;
     padding: 20px 40px 30px 40px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
   }
 }
+
 .heading {
   text-align: left;
-  margin: 50px 25px;
+  margin: 40px 25px 20px 25px;
 }
+
 .topnav {
   ul {
-    max-width: 90%;
-    margin-left: 70px;
+    max-width: 95%;
+    margin-left: 40px;
     margin-bottom: 100px;
   }
+
   &__li {
     height: 120px;
     padding: 40px 0 40px 20px;
@@ -45,6 +56,7 @@
     border-radius: 40px;
     box-shadow: 5px 5px 5px #ccc;
   }
+
   &__number {
     display: inline-block;
     text-align: center;
@@ -52,25 +64,29 @@
     padding: 5px 15px;
     margin-left: -40px;
   }
+
   .fas {
     padding-right: 50px;
     padding-left: 50px;
   }
 }
+
 .restaurants {
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 150px;
+  padding-top: 30px;
+  padding-bottom: 100px;
 }
+
 .restaurant {
-  width: 90%;
-  margin: 50px auto 0 auto;
+  width: 95%;
+  margin: 30px auto 0 auto;
   padding-bottom: 20px;
   border-radius: 25px;
   box-shadow: 5px 5px 5px #ccc;
 
   &__figure {
     position: relative;
+
     img {
       width: 100%;
       max-height: 390px;
@@ -80,13 +96,16 @@
       border-top-right-radius: 20px;
       margin-bottom: 20px;
     }
+
     .restaurant__figcaption {
       display: flex;
       justify-content: space-between;
       margin: auto 30px;
+
       &__details {
         padding-left: 30px;
       }
+
       &__favourite {
         align-items: center;
       }
@@ -101,15 +120,158 @@
   padding: 10px 50px;
 }
 
+// FOOTER SHARE ********************************************************************************************************
 .footer {
   padding-left: 20px;
   line-height: 40px;
+
   &__logo {
     padding-top: 20px;
     margin-bottom: 20px;
   }
+
   .fas {
     display: inline-block;
     width: 30px;
   }
+}
+
+// LOVE ANIMATION SHARE ********************************************************************************************************
+.love {
+  position: relative;
+  font-size: 50px;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  // color: #ddd;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+
+.love:after {
+  content: "\f004";
+  color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  scale: 0;
+  transform: scale(0);
+  transition: all 0.5s ease;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to bottom, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-text-stroke-color: transparent;
+}
+
+.love:hover:after {
+  transform: scale(1);
+  scale: 1;
+}
+
+// ****************************************************************************************************************
+
+// RESTAURANT CSS**************************************************************************************************
+
+.toparrow {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.header {
+  .toparrow {
+    padding-top: 10px;
+  }
+
+  &__logo {
+    text-align: center;
+  }
+
+  &__restaurant {
+    img {
+      width: 100%;
+      max-height: 950px;
+      object-fit: cover;
+      background-position: center;
+    }
+  }
+}
+
+
+.menu {
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  margin-top: -200px;
+  padding-bottom: 80px;
+  position: relative;
+  z-index: 1;
+
+  &__restaurant {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px 30px 30px;
+    margin-bottom: 30px;
+  }
+
+  &__heading {
+    padding-left: 20px;
+    padding-top: 50px;
+    margin-bottom: 40px;
+    display: inline-block;
+    position: relative;
+    line-height: 15px;
+
+    &:after {
+      content: "";
+      height: 5px;
+      width: 62px;
+      background-color: #99E2D0;
+      position: absolute;
+      bottom: -.5em;
+      left: 0;
+      margin-left: 20px;
+    }
+  }
+
+
+  .menulist {
+    &__ul {
+      background-color: #f6f6f6;
+      max-width: 90%;
+      margin: 20px 0;
+    }
+
+    &__li {
+      max-width: 98%;
+      height: 120px;
+      padding: 40px 20px 40px 40px;
+      margin: 0 20px 20px 20px;
+      border-radius: 40px;
+      box-shadow: 5px 5px 5px #ccc;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: flex-end;
+    }
+  }
+
+  .order {
+    display: block;
+    text-align: center;
+    height: 80px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px #ccc;
+    padding: 15px 80px 30px 80px;
+    width: 350px;
+    margin: 50px auto 50px auto;
+
+  }
+
 }
