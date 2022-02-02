@@ -13,8 +13,11 @@
 <body>
   <header class="header">
     <div class="header__arrow">
-      <div class="fas fa-arrow-left toparrow"></div>
-      <div class="header__logo">ohmyfood</div>
+      <a href="index.html">
+        <div class="fas fa-arrow-left toparrow"></div>
+      </a>
+    </div>
+    <div class="header__logo">ohmyfood</div>
     </div>
     <div class="header__restaurant"><img src="images/bastille.jpg" alt="Bastille" /></div>
   </header>
@@ -33,18 +36,22 @@
             <p class="menulist__side">with orange zest</p>
           </div>
           <div class="menulist__price">25 &euro;</div>
+          <span class="tick far fa-check-circle  fa-2x"></span>
         </li>
+
         <li class="menulist__li">
           <div class="menulist__dish">Grandmother's Vegetable Soup
             <p class="menulist__side">carrot, parsnips, Jerusalem artichoke</p>
           </div>
           <div class="menulist__price">35 &euro;</div>
+          <button class="tick far fa-check-circle fa-spin fa-2x"></button>
         </li>
         <li class="menulist__li">
           <div class="menulist__dish">Onion Soup
             <p class="menulist__side">Revisted</p>
           </div>
           <div class="menulist__price">20 &euro;</div>
+          <button class="tick far fa-check-circle fa-2x"></button>
         </li>
       </ul>
     </nav>
@@ -57,18 +64,21 @@
             <p class="menulist__side">with mashed parsnips</p>
           </div>
           <div class="menulist__price">40 &euro;</div>
+          <button class="tick far fa-check-circle fa-2x"></button>
         </li>
         <li class="menulist__li">
           <div class="menulist__dish">Magret de canard
             <p class="menulist__side">with mashed potatoes</p>
           </div>
           <div class="menulist__price">35 &euro;</div>
+          <button class="tick far fa-check-circle fa-2x"></button>
         </li>
         <li class="menulist__li">
           <div class="menulist__dish">Game Hen
             <p class="menulist__side">with vegetable gnocchis</p>
           </div>
           <div class="menulist__price">44 &euro;</div>
+          <button class="tick far fa-check-circle fa-2x"></button>
         </li>
       </ul>
     </nav>
@@ -82,18 +92,21 @@
             <p class="menulist__side">with hazelnut butter</p>
           </div>
           <div class="menulist__price">18 &euro;</div>
+          <button class="tick far fa-check-circle fa-2x"></button>
         </li>
         <li class="menulist__li">
           <div class="menulist__dish">Chocolate Lava Cake
             <p class="menulist__side">Revisted</p>
           </div>
           <div class="menulist__price">22 &euro;</div>
+          <button class="tick far fa-check-circle fa-2x"></button>
         </li>
         <li class="menulist__li">
           <div class="menulist__dish">Napolean
             <p class="menulist__side">with blueberries and marzipan</p>
           </div>
           <div class="menulist__price">23 &euro;</div>
+          <button class="tick far fa-check-circle fa-2x"></button>
         </li>
       </ul>
     </nav>
@@ -108,10 +121,12 @@
     <div class="footer__logo">ohmyfood</div>
     <nav class="bottom-nav">
       <ul>
-        <li class="bottom-nav__li"><span class="fas fa-solid fa-utensils"></span>Suggest a restaurant</li>
-        <li class="bottom-nav__li"><span class="fas fa-hands-helping"></span>Become a partner</li>
+        <!-- <li class="bottom-nav__li"><span class="fas fa-solid fa-utensils"></span>Suggest a restaurant</li>
+        <li class="bottom-nav__li"><span class="fas fa-hands-helping"></span>Become a partner</li> -->
+        <li class="bottom-nav__li"><span class="fas fa-solid fa-utensils fa-fw"></span>&nbsp; Suggest a restaurant</li>
+        <li class="bottom-nav__li"><span class="fas fa-hands-helping fa-fw"></span>&nbsp; Become a partner</li>
         <li class="bottom-nav__li">Legal</li>
-        <li class="bottom-nav__li">Contact</li>
+        <li class="bottom-nav__li"><a href="mailto:ohmyfood@ohmyfood.com">Contact</a></li>
       </ul>
     </nav>
   </footer>

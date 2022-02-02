@@ -1,6 +1,14 @@
 $primaryColor: #9356dc;
+$secondaryColor: #ff79da;
 $new_backgroundColor: #99e2d0;
 $newTextColor: #139273;
+
+a, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+
 
 @mixin explore-order {
   background: rgb(227, 112, 218);
@@ -26,6 +34,10 @@ $newTextColor: #139273;
     background: rgb(227, 112, 218);
     background: linear-gradient(90deg, rgba(227, 112, 218, 1) 0%, rgba(215, 108, 218, 1) 35%, rgba(162, 91, 219, 1) 100%);
     color: white;
+
+    &:hover {
+      filter: brightness(120%);
+    }
   }
 }
 
@@ -76,7 +88,14 @@ $newTextColor: #139273;
   color: #7b7b7b;
 }
 
+
+
 .order {
   @include explore-order;
   border: transparent;
+
+  &:hover {
+    filter: brightness(120%);
+    box-shadow: 10px 10px 10px #ccc;
+  }
 }
