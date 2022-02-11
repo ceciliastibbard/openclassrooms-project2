@@ -40,7 +40,7 @@
     width: 100vw;
     text-align: center;
     background: #C4D9EB;
-
+  
     span {
       -webkit-text-stroke-width: 1.25px;
       -webkit-text-stroke-color: #000;
@@ -69,7 +69,7 @@
       text-shadow: 0 -60px #d54062, 0 -150px #8fc0a9;
     }
   }
-
+}
   // WINE GLASSES********************************************************************************************
 
   .left {
@@ -108,43 +108,45 @@
   .loader {
     padding-top: 180px;
     margin-bottom: 20px;
-  }
+  
 
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 70px;
-    height: 25px;
-    position: relative;
-    opacity: 0;
-    animation: 2s clinking infinite linear 2s;
-  }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 70px;
+      height: 25px;
+      position: relative;
+      opacity: 0;
+      animation: 2s clinking infinite linear 2s;
+    }
 
-  li {
-    width: 6px;
-    height: 15px;
-    background: palevioletred;
-    position: absolute;
-    transform-origin: bottom;
-  }
+    li {
+      width: 6px;
+      height: 15px;
+      background: palevioletred;
+      position: absolute;
+      transform-origin: bottom;
+    }
 
-  li:nth-child(1) {
-    left: 26px;
-    bottom: 5px;
-    transform: rotate(-35deg);
-  }
+    li:nth-child(1) {
+      left: 26px;
+      bottom: 5px;
+      transform: rotate(-35deg);
+    }
 
-  li:nth-child(2) {
-    left: 34px;
-    bottom: 8px;
-  }
+    li:nth-child(2) {
+      left: 34px;
+      bottom: 8px;
+    }
 
-  li:nth-child(3) {
-    left: 42px;
-    bottom: 5px;
-    transform: rotate(35deg);
-  }
+    li:nth-child(3) {
+      left: 42px;
+      bottom: 5px;
+      transform: rotate(35deg);
+    }
+
+}
 
   @keyframes clinking {
     0% {
@@ -180,5 +182,6 @@
         font-size: 50px;
       }
     }
+
   }
-}
+  

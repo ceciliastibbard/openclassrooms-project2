@@ -56,15 +56,18 @@
     text-shadow: 0 -60px #d54062, 0 -150px #8fc0a9;
   }
 }
-#preloader .left {
+
+.left {
   display: inline-block;
   margin-right: 10px;
   animation: rotate1 2s cubic-bezier(0.39, 1.52, 0.46, 0.92) infinite;
 }
-#preloader .right {
+
+.right {
   display: inline-block;
   animation: rotate2 2s cubic-bezier(0.39, 1.52, 0.46, 0.92) infinite;
 }
+
 @keyframes rotate1 {
   0% {
     transform: rotate(0deg);
@@ -81,11 +84,11 @@
     transform: rotate(-22deg);
   }
 }
-#preloader .loader {
+.loader {
   padding-top: 180px;
   margin-bottom: 20px;
 }
-#preloader ul {
+.loader ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -95,27 +98,28 @@
   opacity: 0;
   animation: 2s clinking infinite linear 2s;
 }
-#preloader li {
+.loader li {
   width: 6px;
   height: 15px;
   background: palevioletred;
   position: absolute;
   transform-origin: bottom;
 }
-#preloader li:nth-child(1) {
+.loader li:nth-child(1) {
   left: 26px;
   bottom: 5px;
   transform: rotate(-35deg);
 }
-#preloader li:nth-child(2) {
+.loader li:nth-child(2) {
   left: 34px;
   bottom: 8px;
 }
-#preloader li:nth-child(3) {
+.loader li:nth-child(3) {
   left: 42px;
   bottom: 5px;
   transform: rotate(35deg);
 }
+
 @keyframes clinking {
   0% {
     opacity: 0;
@@ -135,12 +139,12 @@
   }
 }
 @media screen and (max-height: 200px) {
-  #preloader .header {
+  .header {
     transform: scale(0.3, 0.3);
   }
 }
 @media screen and (max-width: 576px) {
-  #preloader .header span {
+  .header span {
     font-size: 50px;
   }
 }
