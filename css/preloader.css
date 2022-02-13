@@ -8,8 +8,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background: #C4D9EB;
+  height: 100%;
+  background: #e1ecf0;
   opacity: 1;
   animation: endloader 3s ease-in-out forwards;
 }
@@ -28,17 +28,17 @@
     z-index: 0;
   }
 }
-#preloader .header {
-  width: 100vw;
+#preloader .loading__logo {
+  width: 100%;
   text-align: center;
-  background: #C4D9EB;
+  background: #e1ecf0;
 }
-#preloader .header span {
+#preloader .loading__logo span {
   -webkit-text-stroke-width: 1.25px;
-  -webkit-text-stroke-color: #000;
+  -webkit-text-stroke-color: #2e2b2b;
   font-size: 100px;
   text-shadow: 0 0px #f3c623, 0 0px #f2aaaa;
-  transform: translate(0, 100%) rotate(0deg);
+  transform: translate(0, 100%) rotate(4deg);
   animation: jump 2s ease-in-out infinite;
   display: inline-block;
   font-family: "Shrikhand", cursive;
@@ -50,7 +50,7 @@
   }
   50% {
     transform: translate(0, 0) rotate(4deg);
-    text-shadow: 0 0px #8fc0a9, 0 0px #84a9ac;
+    text-shadow: 0 0px #e6b650, 0 0px #84a9ac;
   }
   67% {
     text-shadow: 0 -60px #d54062, 0 -150px #8fc0a9;
@@ -59,12 +59,14 @@
 
 .left {
   display: inline-block;
+  color: #453635;
   margin-right: 10px;
   animation: rotate1 2s cubic-bezier(0.39, 1.52, 0.46, 0.92) infinite;
 }
 
 .right {
   display: inline-block;
+  color: #453635;
   animation: rotate2 2s cubic-bezier(0.39, 1.52, 0.46, 0.92) infinite;
 }
 
@@ -84,11 +86,11 @@
     transform: rotate(-22deg);
   }
 }
-.loader {
+.loading__strokes {
   padding-top: 180px;
   margin-bottom: 20px;
 }
-.loader ul {
+.loading__strokes ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -98,23 +100,23 @@
   opacity: 0;
   animation: 2s clinking infinite linear 2s;
 }
-.loader li {
+.loading__strokes li {
   width: 6px;
   height: 15px;
   background: palevioletred;
   position: absolute;
   transform-origin: bottom;
 }
-.loader li:nth-child(1) {
+.loading__strokes li:nth-child(1) {
   left: 26px;
   bottom: 5px;
   transform: rotate(-35deg);
 }
-.loader li:nth-child(2) {
+.loading__strokes li:nth-child(2) {
   left: 34px;
   bottom: 8px;
 }
-.loader li:nth-child(3) {
+.loading__strokes li:nth-child(3) {
   left: 42px;
   bottom: 5px;
   transform: rotate(35deg);
@@ -138,14 +140,9 @@
     transform: scaleY(0.3);
   }
 }
-@media screen and (max-height: 200px) {
-  .header {
-    transform: scale(0.3, 0.3);
-  }
-}
 @media screen and (max-width: 576px) {
-  .header span {
-    font-size: 50px;
+  .loading__logo, .loading__strokes, .loader__wineglasses {
+    transform: scale(0.3, 0.3);
   }
 }
 

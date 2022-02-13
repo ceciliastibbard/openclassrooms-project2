@@ -27,11 +27,10 @@ a:visited {
 
   &__location {
     background-color: #eaeaea;
-    box-shadow: #d5d5d5;
   }
 
   &__explore {
-    @include explore-order();
+    @include explore-order;
 
     &:hover {
       box-shadow: 10px 10px 10px #7b7b7b;
@@ -39,6 +38,7 @@ a:visited {
     }
   }
 }
+
 
 
 .fas--active {
