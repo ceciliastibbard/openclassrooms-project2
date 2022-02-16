@@ -1,0 +1,82 @@
+
+.menulist__li {
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+// TICK GREEN BOX ******************************************************************************************
+
+.tick {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  margin-right: -120px;
+  background: #99E2D0;
+  color: white;
+
+  text-align: center;
+  position: absolute;
+  right: 0;
+}
+
+.menulist__li:hover .tick {
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  transition: transform 0.5s ease-out;
+  transform: translateX(-120px);
+}
+
+// SPINNING TICK *****************************************************************************************
+
+.spin-elt {
+  display: inline-block;
+}
+
+.menulist__li:hover .spin-elt {
+  animation: tickspin-animation 1s 1;
+  animation-timing-function: linear;
+}
+
+@keyframes tickspin-animation {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+  }
+
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg)
+  }
+}
+
+// PRICE MOVING **************************************************************************************
+
+.menulist__price {
+  position: absolute;
+  width: max-content;
+  text-align: right;
+  right: 40px;
+  bottom: 15px;
+}
+
+.menulist__li:hover .menulist__price {
+  position: absolute;
+  right: 120px;
+  transition: all 0.5s ease-out;
+}
+
+// SHORTEN TEXT ***************************************************************************************
+
+.menulist__li:hover .menulist__dish,
+.menulist__li:hover .menulist__side {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 65%;
+}

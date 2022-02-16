@@ -36,7 +36,8 @@
 #preloader {
 
   .loading__logo {
-    width: 100%;
+    // width: 100%;
+    width: 150%;
     text-align: center;
     background: #e1ecf0;
 
@@ -174,7 +175,17 @@
 
 @media screen and (max-width: 576px) {
 
-  .loading__logo, .loading__strokes, .loader__wineglasses {
-    transform: scale(0.3, 0.3);
+  // .loading {
+  //   transform: scale(0.3, 0.3);
+  // }
+
+.loading {
+  transform: scale(0.5, 0.5);
+  margin-top: -20px;
+}
+
+.loading__strokes {
+  padding-top: 150px;
+  margin-bottom: -40px;  
   }
 }

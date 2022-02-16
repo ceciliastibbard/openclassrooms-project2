@@ -1,0 +1,23 @@
+.header__icon {
+  font-size: 30px;
+}
+
+.menu__restaurantname {
+  font-size: 1.6rem;
+}
+
+.menulist {
+  &__dish {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  &__side {
+    font-size: 0.95rem;
+    font-weight: 200;
+  }
+
+  &__price {
+    font-weight: bold;
+  }
+}

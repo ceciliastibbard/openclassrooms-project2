@@ -1,7 +1,6 @@
 // HOMEPAGE CSS *******************************************************************************************
 $box-shadow: 5px 5px 5px #ccc;
 
-
 .header {
   text-align: center;
 
@@ -27,7 +26,6 @@ $box-shadow: 5px 5px 5px #ccc;
   &__discover {
     padding: 20px 70px;
     margin: 10px 70px;
-    
   }
 
   &__explore {
@@ -71,7 +69,7 @@ $box-shadow: 5px 5px 5px #ccc;
     display: inline-block;
     text-align: center;
     border-radius: 50px;
-    padding: 5px 15px;
+    padding: 6px 15px;
     margin-left: -40px;
   }
 
@@ -177,14 +175,11 @@ $box-shadow: 5px 5px 5px #ccc;
   }
 }
 
-
 .menu {
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
-  // margin-top: -50px;
   padding-bottom: 80px;
   position: relative;
-  // z-index: 1;
 
   &__restaurant {
     display: flex;
@@ -205,7 +200,7 @@ $box-shadow: 5px 5px 5px #ccc;
       content: "";
       height: 5px;
       width: 55px;
-      background-color: #99E2D0;
+      background-color: #99e2d0;
       position: absolute;
       bottom: -0.5em;
       left: 0;
@@ -228,7 +223,7 @@ $box-shadow: 5px 5px 5px #ccc;
 
   &__li {
     max-width: 100%;
-    height: 120px;
+    height: max-content;
     padding: 40px 40px 40px 40px;
     margin: 0 20px 20px 30px;
     border-radius: 40px;
@@ -236,21 +231,23 @@ $box-shadow: 5px 5px 5px #ccc;
     background-color: #ffffff;
     display: flex;
     flex-wrap: wrap;
-   
+
     &__price {
       align-self: flex-end;
     }
   }
 }
 
-// ORDER BUTTON **************************************************************************************************
-.order {
-  display: block;
-  text-align: center;
-  height: 80px;
-  border-radius: 50px;
-  box-shadow: $box-shadow;
-  padding: 15px 80px;
-  width: 350px;
-  margin: 50px auto 50px auto;
-}
+
+
+  // ORDER BUTTON **************************************************************************************************
+  .order {
+    display: block;
+    text-align: center;
+    height: 80px;
+    border-radius: 50px;
+    box-shadow: $box-shadow;
+    padding: 15px 80px;
+    width: 350px;
+    margin: 50px auto 50px auto;
+  }

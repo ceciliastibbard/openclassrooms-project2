@@ -16,7 +16,8 @@
   top: 0;
   width: 100px;
   height: 100%;
-  margin-right: -120px;
+  // margin-right: -120px;
+  margin-right: -400px;
   background: #99E2D0;
   color: white;
 
@@ -28,8 +29,8 @@
 .menulist__li:hover .tick {
   border-top-right-radius: 35px;
   border-bottom-right-radius: 35px;
-  transition: transform 0.5s ease-out;
-  transform: translateX(-120px);
+  transition: transform 0.3s ease-out;
+  transform: translateX(-400px);
 }
 
 // SPINNING TICK *****************************************************************************************
@@ -39,7 +40,6 @@
 }
 
 .menulist__li:hover .spin-elt {
-  animation-duration: 10000ms;
   animation: tickspin-animation 1s 1;
   animation-timing-function: linear;
 }

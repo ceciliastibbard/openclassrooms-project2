@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
+
+html {
+  font-size: 140%;
+  font-family: Roboto;
+}
+
+.header {
+  &__logo {
+    font-family: Shrikhand;
+    font-size: 1.8rem;
+  }
+
+  &__icon {
+    font-size: 30px;
+  }
+
+  &__location {
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+
+  &__book {
+    font-weight: bolder;
+    font-size: 1.2rem;
+  }
+
+  &__explore {
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+}
+
+.heading {
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.topnav {
+  &__li {
+    font-weight: 900;
+    font-size: 1.0rem;
+  }
+}
+
+.restaurant {
+  &__name {
+    font-weight: 900;
+    font-size: 1.0rem;
+  }
+
+  &__city {
+    font-weight: 300;
+    font-size: 0.9rem;
+  }
+}
+
+.footer {
+  font-family: Roboto;
+
+  &__logo {
+    font-family: Shrikhand;
+  }
+
+  .bottom-nav {
+    font-size: 0.7rem;
+  }
+}
+
+// RESTAURANT TYPO ***************************************************************************************************
+
+.menu__restaurantname {
+  font-family: Shrikhand;
+  font-size: 1.4rem;
+}
+
+.menulist {
+  &__dish {
+    font-size: 1.0rem;
+    font-weight: bold;
+  }
+
+  &__side {
+    font-size: 0.85rem;
+    font-weight: 200;
+  }
+
+  &__price {
+    font-weight: bold;
+  }
+}
+
+.order {
+  font-weight: 900;
+  font-size: 1.2rem;
+}

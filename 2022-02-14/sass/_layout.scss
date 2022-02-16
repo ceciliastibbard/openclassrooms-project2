@@ -1,0 +1,254 @@
+// HOMEPAGE CSS *******************************************************************************************
+$box-shadow: 5px 5px 5px #ccc;
+
+
+.header {
+  text-align: center;
+
+  &__logo {
+    display: block;
+    padding: 20px 0;
+  }
+
+  &__location {
+    height: 70px;
+    padding: 20px 0;
+    box-shadow: 0 -5px 5px #ccc;
+  }
+
+  &__icon {
+    padding-right: 20px;
+  }
+
+  &__book {
+    padding-top: 50px;
+  }
+
+  &__discover {
+    padding: 20px 70px;
+    margin: 10px 70px;
+    
+  }
+
+  &__explore {
+    height: 80px;
+    border-radius: 50px;
+    box-shadow: $box-shadow;
+    margin-bottom: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0 30px;
+  }
+}
+
+.heading {
+  text-align: left;
+  margin: 40px 25px 20px 25px;
+}
+
+.topnav {
+  ul {
+    max-width: 95%;
+    margin-left: 40px;
+    margin-bottom: 100px;
+    margin-right: 20px;
+  }
+
+  &__li {
+    height: 120px;
+    padding: 40px 0 40px 20px;
+    margin-bottom: 40px;
+    border-radius: 40px;
+    box-shadow: $box-shadow;
+    display: flex;
+  }
+
+  &__link {
+    padding-top: 5px;
+  }
+
+  &__number {
+    display: inline-block;
+    text-align: center;
+    border-radius: 50px;
+    padding: 6px 15px;
+    margin-left: -40px;
+  }
+
+  .fas {
+    padding-left: 30px;
+    padding-right: 50px;
+    align-self: center;
+  }
+}
+
+.restaurants {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+
+.restaurant {
+  width: 95%;
+  margin: 30px auto 0 auto;
+  padding-bottom: 20px;
+  border-radius: 25px;
+  box-shadow: $box-shadow;
+
+  &__figure {
+    position: relative;
+
+    img {
+      width: 100%;
+      max-height: 360px;
+      min-height: 360px;
+      object-fit: cover;
+      background-position: center;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      margin-bottom: 20px;
+    }
+
+    .restaurant__figcaption {
+      display: flex;
+      justify-content: space-between;
+      margin: auto 30px;
+
+      &__details {
+        padding-left: 30px;
+      }
+
+      &__favourite {
+        align-items: center;
+      }
+    }
+  }
+}
+
+.new {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  padding: 10px 50px;
+}
+
+// FOOTER SHARE ********************************************************************************************************
+.footer {
+  padding-left: 20px;
+  line-height: 40px;
+
+  &__logo {
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.bottom-nav {
+  padding-bottom: 20px;
+}
+
+// RESTAURANT CSS**************************************************************************************************
+
+.toparrow {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.header {
+  .toparrow {
+    padding-top: 10px;
+  }
+
+  &__logo {
+    text-align: center;
+  }
+
+  &__restaurant {
+    img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      background-position: center;
+      overflow: hidden;
+      object-position: 50% 80%;
+      margin-bottom: -50px;
+    }
+  }
+}
+
+
+.menu {
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  padding-bottom: 80px;
+  position: relative;
+  
+  &__restaurant {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px 30px 30px;
+    margin-bottom: 30px;
+  }
+
+  &__heading {
+    padding-left: 20px;
+    padding-top: 50px;
+    margin-bottom: 40px;
+    display: inline-block;
+    position: relative;
+    line-height: 15px;
+
+    &:after {
+      content: "";
+      height: 5px;
+      width: 55px;
+      background-color: #99E2D0;
+      position: absolute;
+      bottom: -0.5em;
+      left: 0;
+      margin-left: 20px;
+    }
+  }
+}
+
+.menulist {
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.3s;
+
+  &__ul {
+    background-color: #f6f6f6;
+    max-width: 90%;
+    padding-right: 10px;
+    margin: 20px 0px;
+  }
+
+  &__li {
+    max-width: 100%;
+    height: max-content;
+    padding: 40px 40px 40px 40px;
+    margin: 0 20px 20px 30px;
+    border-radius: 40px;
+    box-shadow: $box-shadow;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+   
+    &__price {
+      align-self: flex-end;
+    }
+  }
+}
+
+// ORDER BUTTON **************************************************************************************************
+.order {
+  display: block;
+  text-align: center;
+  height: 80px;
+  border-radius: 50px;
+  box-shadow: $box-shadow;
+  padding: 15px 80px;
+  width: 350px;
+  margin: 50px auto 50px auto;
+}
