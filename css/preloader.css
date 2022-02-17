@@ -36,7 +36,8 @@
   }
 }
 #preloader .loading__logo {
-  width: 150%;
+  width: 100%;
+  /* width: 150%; */
   text-align: center;
   background: #e1ecf0;
 }
@@ -148,8 +149,12 @@
   }
 }
 @media screen and (max-width: 576px) {
+  #preloader .loading__logo span {
+    font-size: 50px;
+  }
+
   .loading {
-    transform: scale(0.5, 0.5);
+    /* transform: scale(0.5, 0.5); */
     margin-top: -20px;
   }
 
