@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 *,
 html {
@@ -442,7 +441,7 @@ html {
 }
 
 .love:after {
-  content: "";
+  content: "\f004";
   color: transparent;
   position: absolute;
   top: 0;
