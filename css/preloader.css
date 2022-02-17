@@ -37,7 +37,6 @@
 }
 #preloader .loading__logo {
   width: 100%;
-  /* width: 150%; */
   text-align: center;
   background: #e1ecf0;
 }
@@ -154,13 +153,17 @@
   }
 
   .loading {
-    /* transform: scale(0.5, 0.5); */
-    margin-top: -20px;
+    margin-top: 20px;
   }
 
   .loading__strokes {
     padding-top: 150px;
     margin-bottom: -40px;
+  }
+
+  .loading__wineglasses {
+    font-size: small;
+    margin-top: 50px;
   }
 }
 
