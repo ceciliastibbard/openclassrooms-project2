@@ -260,6 +260,7 @@ input {
   background-color: #ffffff;
   display: flex;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 .menulist__li__price {
   align-self: flex-end;
@@ -477,7 +478,7 @@ html {
   top: 0;
   width: 100px;
   height: 100%;
-  margin-right: -400px;
+  margin-right: -100px;
   background: #99E2D0;
   color: white;
   text-align: center;
@@ -489,7 +490,7 @@ html {
   border-top-right-radius: 35px;
   border-bottom-right-radius: 35px;
   transition: transform 0.3s ease-out;
-  transform: translateX(-400px);
+  transform: translateX(-100px);
 }
 
 .spin-elt {

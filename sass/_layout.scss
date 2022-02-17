@@ -231,6 +231,7 @@ $box-shadow: 5px 5px 5px #ccc;
     background-color: #ffffff;
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
 
     &__price {
       align-self: flex-end;
